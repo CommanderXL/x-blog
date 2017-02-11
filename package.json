@@ -1,0 +1,46 @@
+{
+  "name": "x-blog",
+  "version": "1.0.0",
+  "description": "person blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommanderXL/x-blog.git"
+  },
+  "keywords": [
+    "webpack2",
+    "vue2",
+    "node"
+  ],
+  "author": "XRene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CommanderXL/x-blog/issues"
+  },
+  "homepage": "https://github.com/CommanderXL/x-blog#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "es6-promise": "^4.0.5",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue": "^2.1.10",
+    "vue-loader": "^10.3.0",
+    "vue-router": "^2.2.0",
+    "vue-style-loader": "^2.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
