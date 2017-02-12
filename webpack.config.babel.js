@@ -19,7 +19,7 @@ const PATHS = {
 module.exports = {
   entry: {
     app: './src/main.js',
-    vendors: ['vue']
+    //vendors: ['vue', 'vue-router']
   },
   output: {
     path: PATHS.dist,
@@ -40,24 +40,30 @@ module.exports = {
       },
       {
         test: /\.less/,
-        use: [{
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'less-loader'
-          }
-        ]
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: [
+            'css-loader',
+            'style-loader'
+          ]
+        })
+      },
+      {
+        test: /\.css/,
+        use: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: [
+            'css-loader'
+          ]
+        })
       }
     ]
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.common.js',
-      components: path.join(__dirname, 'src/components'),
-      lib: path.join(__dirname, 'src/lib')
+      'vue$': 'vue/dist/vue.common.js',
+      'components': path.join(__dirname, 'src/components'),
+      'lib': path.join(__dirname, 'src/lib')
     },
     extensions: ['.js', '.less', '.vue', '*', '.json']
   },
@@ -73,8 +79,8 @@ module.exports = {
       allChunks: true,
       disable: false
     }),
-    new webpack.optimize.CommonsChunkPlugin({
+    /*new webpack.optimize.CommonsChunkPlugin({
       names: ['vendors', 'manifest']
-    })
+    })*/
   ]
 }
