@@ -1,11 +1,11 @@
 <template>
-  <div class="about-page">
-    this is about page
+  <div class="tags-page">
+    this is tags page
   </div>
 </template>
 
 <script>
-  const COMPONENT_NAME = 'about-page';
+  const COMPONENT_NAME = 'tags-page';
 
   export default {
     name: COMPONENT_NAME

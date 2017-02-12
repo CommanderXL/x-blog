@@ -4,7 +4,7 @@
   "description": "person blog",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist"
+    "dev": "webpack-dev-server --info false --compress true --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist"
   },
   "repository": {
     "type": "git",
