@@ -20,10 +20,10 @@
 
 ```javascript
   node -v
-  v6.9.2
+  v6\.9\.2
 
   npm -v
-  3.10.9
+  3\.10\.9
 ```
 
 ```javascript
