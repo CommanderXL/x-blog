@@ -35,3 +35,7 @@
   
   npm run dev
 ```
+
+some tips:
+
+* 未接入后端前,前端使用`mock`数据

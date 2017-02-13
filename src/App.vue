@@ -10,8 +10,7 @@
         msg: 'hello world'
       }
     },
-    components: {
-    }
+    components: {}
   }
 </script>
 <style lang="less">
@@ -19,18 +18,22 @@
     margin: 0;
     padding: 0;
   }
-  html, body {
+  
+  html,
+  body {
     height: 100%;
+    font-family: pingfang;
   }
-
-  ul,ol {
+  
+  ul,
+  ol {
     list-style: none;
   }
-
+  
   a {
     text-decoration: none;
   }
-
+  
   #app {
     height: 100%;
   }
