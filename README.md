@@ -27,15 +27,15 @@
 ```
 
 ```javascript
-  fork本项目
+  1. fork本项目
 
-  git clone ...
+  2. git clone ...
 
-  cd x-blog
+  3. cd x-blog
 
-  npm install （建议使用淘宝镜像）
+  4. npm install （建议使用淘宝镜像）
   
-  npm run dev
+  5. npm run dev
 ```
 
 ## 交流
