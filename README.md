@@ -36,6 +36,8 @@
   4. npm install （建议使用淘宝镜像）
   
   5. npm run dev
+
+  6. 浏览器打开 localhost:3000/pages
 ```
 
 ## 交流
