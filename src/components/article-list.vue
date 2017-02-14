@@ -11,7 +11,10 @@
         </p>
       </div>
       <div class="article-tags">
-        js html
+        <ul class="tag-ul">
+          <li class="tag-li">JS</li>
+          <li class="tag-li">Html</li>
+        </ul>
       </div>
     </div>
     <div class="article-img-box">
@@ -29,10 +32,15 @@
   }
 </script>
 <style lang="less">
+  @import '../less/variable.less'; 
+
   .article-list {
     display: flex;
-    height: 300px;
+    max-width: 660px;
+    min-height: 250px;
     padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     border: 1px solid #e3e3e3;
   }
@@ -41,7 +49,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100%;
   }
   
   .publish-time {
@@ -67,12 +74,7 @@
     line-height: 1.8;
     opacity: .8;
   }
-  
-  .article-tags {
-    height: 40px;
-    line-height: 40px;
-  }
-  
+    
   .article-img-box {
     display: flex;
     justify-content: center;
@@ -86,4 +88,25 @@
       max-height: 150px;
     }
   }
-</style>
+
+  .tag-ul {
+    display: flex;
+    .tag-li {
+      width: 40px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      text-align: center;
+      margin-right: 8px;
+      background: @html-tag;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      opacity: .7;
+      transition: opacity .5s ease-in;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  </style>

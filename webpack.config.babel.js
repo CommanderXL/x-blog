@@ -1,9 +1,3 @@
-/*import webpack from 'webpack';
-import path from 'path';
-import fs from 'fs';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';*/
-
 const webpack = require('webpack');
 const path = require("path");
 const fs = require("fs");
@@ -44,19 +38,19 @@ module.exports = {
       },
       {
         test: /\.less/,
-        loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: [
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
             'css-loader',
-            'style-loader'
+            'less-loader'
           ]
         })
       },
       {
         test: /\.css/,
         use: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: [
+          fallback: 'style-loader',
+          use: [
             'css-loader'
           ]
         })
@@ -67,7 +61,8 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.common.js',
       'components': path.join(__dirname, 'src/components'),
-      'lib': path.join(__dirname, 'src/lib')
+      'lib': path.join(__dirname, 'src/lib'),
+      'less': path.join(__dirname, 'src/less')
     },
     extensions: ['.js', '.less', '.vue', '*', '.json']
   },

@@ -26,6 +26,6 @@
 
 <style lang="less">
   .post-page {
-    padding: 0 150px;
+
   }
 </style>
