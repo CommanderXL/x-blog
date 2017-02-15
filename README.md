@@ -49,3 +49,13 @@
 some tips:
 
 * 未接入后端前,前端使用`mock`数据
+
+## 更新日志
+
+* 2.14
+
+完成`post`静态页面原型,修复`webpack`使用`extractTextPlugin`的正确姿势
+
+* 2.15
+
+添加`about`静态页面
