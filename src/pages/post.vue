@@ -1,9 +1,9 @@
 <template>
-  <div class="post-page">
+  <article class="post-page">
     <article-list 
       v-for="art in articleList">
     </article-list>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -26,6 +26,6 @@
 
 <style lang="less">
   .post-page {
-
+    padding: 30px;
   }
 </style>

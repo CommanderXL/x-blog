@@ -2,7 +2,6 @@
   <div class="index-page">
     <div class="info-container">
       <div class="avatar-box">
-
       </div>
       <div class="nav-box">
         <p class="nav-list">
@@ -13,9 +12,6 @@
         </p>
       </div>
     </div>
-    <!--this is index-page
-    <router-link to="/foo">foo</router-link>
-    <router-link to="/bar">bar</router-link>-->
   </div>
 </template>
 <script>
@@ -33,7 +29,7 @@
     background: url('../images/Shapes.jpg') no-repeat;
     background-size: cover;
   }
-
+  
   .info-container {
     position: absolute;
     top: 35%;
@@ -43,7 +39,7 @@
     transform: translate(-50%, -30%);
     text-align: center;
   }
-
+  
   .avatar-box {
     display: inline-block;
     width: 70px;
@@ -52,16 +48,15 @@
     border: 1px solid #e3e3e3;
     background: url('../images/avatar.png') no-repeat;
     background-size: cover;
-    margin-bottom: 20px;
   }
-
+  
   .nav-list {
     display: flex;
+    margin-top: 20px;
     .nav-item {
       flex: 1;
       cursor: pointer;
       color: #fff;
     }
   }
-
 </style>

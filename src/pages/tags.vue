@@ -1,7 +1,7 @@
 <template>
-  <div class="tags-page">
+  <article class="tags-page">
     this is tags page
-  </div>
+  </article>
 </template>
 
 <script>

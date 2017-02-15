@@ -22,4 +22,7 @@
   #app {
     height: 100%;
   }
+  .app-view {
+    height: 100%;
+  }
 </style>

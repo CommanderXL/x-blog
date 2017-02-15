@@ -1,7 +1,7 @@
 <template>
-  <div class="archive-page">
+  <article class="archive-page">
     this is archive page
-  </div>
+  </article>
 </template>
 
 <script>
