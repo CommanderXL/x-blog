@@ -59,3 +59,27 @@ some tips:
 * 2.15
 
 添加`about`静态页面
+
+* 2.16
+
+1. 添加`json-server`. [使用方法请戳我](https://github.com/typicode/json-server)
+
+主要作用就是在你开发环节在后端同学还未开发完成的情况下，提供一个`mock backend server`。 
+
+在我们还未开始写后端代码前，主要用这个`backend server`去模拟数据格式。
+
+PS: 因为你`webpack-dev-server`占用了一个端口,那么`json-server`需要使用另外一个端口。
+这个时候需要利用`webpack-dev-server`提供的`proxy`功能。
+
+具体的配置信息，见`webpack.config.dev.js`文件
+
+2. 添加`axios`作为`http`资源库
+
+其实`vue`对于开发者使用什么资源库没做什么限制。使用你顺手的就好了。
+
+将`axios`集成进`vue`的方式见`App.vue`文件。
+
+[axios文档请戳我](https://github.com/mzabriskie/axios)
+
+[vue添加插件的方法请戳我](https://cn.vuejs.org/v2/guide/plugins.html)
+
