@@ -132,13 +132,13 @@
     width: 200px;
     text-align: center;
     padding: 20px;
-    /*&::before {
+    &::before {
       content: "";
       display: inline-block;
       width: 0;
       height: 100%;
       vertical-align: middle;
-    }*/
+    }
   }
   
   .about-timeline-box {

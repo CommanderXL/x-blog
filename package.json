@@ -4,7 +4,8 @@
   "description": "person blog",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dashboard -- webpack-dev-server --compress true --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist"
+    "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev.js --compress true --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist",
+    "server": "json-server --watch ./src/lib/mock/db.json --port 3001"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/CommanderXL/x-blog#readme",
   "devDependencies": {
+    "axios": "^0.15.3",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -43,6 +45,7 @@
     "vue-template-compiler": "^2.1.10",
     "webpack": "^2.2.1",
     "webpack-dashboard": "^0.3.0",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.3.0",
+    "webpack-merge": "^2.6.1"
   }
 }
