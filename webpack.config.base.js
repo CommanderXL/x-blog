@@ -74,7 +74,7 @@ module.exports = {
       filename: `${PATHS.dist}/pages/index.html`
     }),
     new ExtractTextPlugin({                                   // css抽离插件,单独放到一个style文件当中.
-      filename: `css/style.[contenthash:8].css`,
+      filename: `css/style.css`,
       allChunks: true,
       disable: false
     }),
