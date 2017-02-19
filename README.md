@@ -92,3 +92,8 @@ PS: 因为你`webpack-dev-server`占用了一个端口,那么`json-server`需要
 * `tags`页面添加`vue-router`路由动态匹配
 
 [使用方法请戳我](http://router.vuejs.org/zh-cn/essentials/dynamic-matching.html)
+
+### 2.19更新
+
+* 添加mock数据, 见`lib/mock/db.json`文件
+* 完成`archive`静态页面
