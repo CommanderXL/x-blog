@@ -4,7 +4,7 @@
       <p class="tags-title">目前共计有 {{tagList.length}} 个标签</p>
       <ul class="tags-ul">
         <li class="tags-li" v-for="tag in tagList">
-          <router-link class="tag-href" :to='{name: "tagDetail", params: {tag: tag.name}}'>{{tag.name}}</router-link>
+          <router-link class="tag-href" :to='{name: "tagDetail", params: {tag: tag.text}}'>{{tag.text}}</router-link>
         </li>
       </ul>
     </section>
@@ -18,33 +18,14 @@
     name: COMPONENT_NAME,
     data() {
       return {
-        tagList: [
-          {
-            name: 'Js'
-          },
-          {
-            name: 'html'
-          },
-          {
-            name: 'Node.js'
-          },
-          {
-            name: 'webpack'
-          },
-          {
-            name: 'Css3'
-          },
-          {
-            name: '网络安全'
-          },
-          {
-            name: 'linux'
-          },
-          {
-            name: 'Promise'
-          }
-        ]
+        tagList: []
       }
+    },
+    mounted() {
+      this.http.get('/api/tags')
+        .then(res => {
+          this.tagList = res.data.data;
+        })
     }
   }
 </script>

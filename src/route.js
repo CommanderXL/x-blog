@@ -5,7 +5,7 @@ import PostPage from './pages/post.vue';
 import TagsPage from './pages/tags.vue';
 import AboutPage from './pages/about.vue';
 import ArchivePage from './pages/archive.vue';
-import TagPage from './pages/tag.vue';
+import TagPage from './pages/tag-detail.vue';
 
 Vue.use(Router);
 

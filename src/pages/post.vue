@@ -1,7 +1,9 @@
 <template>
   <article class="post-page">
     <article-list 
-      v-for="art in articleList">
+      v-for="art in articleList"
+      :article="art"
+      >
     </article-list>
   </article>
 </template>
@@ -15,8 +17,14 @@
     name: COMPONENT_NAME,
     data() {
       return {
-        articleList: [1, 2, 3]
+        articleList: []
       }
+    },
+    mounted() {
+      this.http.get('/api/post')
+        .then(res => {
+          this.articleList = res.data.data;
+        })
     },
     components: {
       ArticleList

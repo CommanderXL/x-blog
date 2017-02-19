@@ -2,18 +2,19 @@
   <article class="article-list">
     <div class="article-content-box">
       <p class="publish-time">
-        2017-2-13 发布
+        {{article.time}} 发布
       </p>
       <div class="article-content">
-        <h3 class="article-title">Webpack2异步加载及分包套路</h3>
+        <h3 class="article-title">{{article.title}}</h3>
         <p class="article-des">
-          大家快来围观啊
+          {{article.des}}
         </p>
       </div>
       <div class="article-tags">
         <ul class="tag-ul">
-          <li class="tag-li">JS</li>
-          <li class="tag-li">Html</li>
+          <li class="tag-li" v-for="item in article.tags">
+            <router-link :to="{name: 'tagDetail', params: {tag: item}}">{{item}}</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -28,7 +29,10 @@
   const COMPONENT_NAME = 'article-list';
 
   export default {
-    name: COMPONENT_NAME
+    name: COMPONENT_NAME,
+    props: [
+      "article"
+    ]
   }
 </script>
 <style lang="less">
@@ -104,6 +108,12 @@
       cursor: pointer;
       opacity: .7;
       transition: opacity .5s ease-in;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+      }
       &:hover {
         opacity: 1;
       }
