@@ -97,3 +97,6 @@ PS: 因为你`webpack-dev-server`占用了一个端口,那么`json-server`需要
 
 * 添加mock数据, 见`lib/mock/db.json`文件
 * 完成`archive`静态页面
+
+
+### 最近这2天有点忙，server端从周四开始更新，望大家理解
