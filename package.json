@@ -51,5 +51,8 @@
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.3.0",
     "webpack-merge": "^2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.15.0"
   }
 }
