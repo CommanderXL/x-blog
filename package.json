@@ -8,6 +8,9 @@
     "server": "json-server --watch ./src/lib/mock/db.json --port 3001",
     "prod": "node build.js | webpack --config webpack.config.prod.js"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CommanderXL/x-blog.git"
@@ -35,10 +38,12 @@
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "html-webpack-plugin": "^2.28.0",
+    "i18n-webpack-plugin": "^0.3.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "open": "0.0.5",
     "opn": "^4.0.2",
+    "pre-commit": "^1.2.2",
     "shelljs": "^0.7.6",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
