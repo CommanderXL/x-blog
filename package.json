@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev.js --compress true --devtool eval-source-map --progress --colors --hot --port 3000 --inline --host 0.0.0.0 --content-base ./dist",
     "server": "json-server --watch ./src/lib/mock/db.json --port 3001",
-    "prod": "node build.js | webpack --config webpack.config.prod.js"
+    "prod": "node ./build/build.js | webpack --config webpack.config.prod.js"
   },
   "pre-commit": [
     "lint"
@@ -38,6 +38,7 @@
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "html-webpack-plugin": "^2.28.0",
+    "i18n-loader": "^0.3.0",
     "i18n-webpack-plugin": "^0.3.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
@@ -48,6 +49,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue": "^2.1.10",
+    "vue-i18n": "^6.0.0-alpha.2",
     "vue-loader": "^10.3.0",
     "vue-router": "^2.2.0",
     "vue-style-loader": "^2.0.0",
