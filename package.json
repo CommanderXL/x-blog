@@ -8,9 +8,6 @@
     "server": "json-server --watch ./src/lib/mock/db.json --port 3001",
     "prod": "node ./build/build.js | webpack --config webpack.config.prod.js"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CommanderXL/x-blog.git"
