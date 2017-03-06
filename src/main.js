@@ -27,7 +27,6 @@ Vue.use(VueI18n, {
   locales: locales
 });
 
-
 Vue.config.lang = 'ja';
 Object.keys(locales).forEach(lang => Vue.locale(lang, locales[lang]))
 
